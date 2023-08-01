@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "main": "ts-node-dev --respawn  --quiet --clear ./src/main.ts",
-    "master": "ts-node-dev --respawn  --quiet --clear ./src/master.ts"
+    "master": "ts-node-dev --respawn  --quiet --clear ./src/master.ts",
+    "path": "ts-node-dev -r tsconfig-paths/register --respawn  --quiet --clear ./src/pathmapping.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "@types/node": "^20.4.5",
     "@types/simplebar": "^5.3.3",
     "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.1.6"
   },
   "dependencies": {
