@@ -46,7 +46,7 @@ let items: number[]
 
 items = [1, 2, 3]
 
-console.log(items)
+// console.log(items)
 
 let tupleItems: [number, string, boolean]
 
@@ -58,8 +58,39 @@ enum Colors {
 }
 
 let white: Colors = Colors.white
-console.log(white)
+// console.log(white)
 
 
 
 ///// type union
+
+
+function showPet(pet: 'dog' | 'cat' | 'zebra'){
+  // console.log(pet)
+}
+
+showPet('dog')
+
+
+
+///// type aliases
+
+
+type Pet = 'dog' | 'cat' | 'zebra'
+
+function displayPet(pet: Pet){
+  // console.log(pet)
+}
+
+displayPet('cat')
+
+
+
+///// type inference
+
+
+let msg = 'Cataline'
+
+window.addEventListener('click', (event) => {
+  console.log(event.target)
+})
