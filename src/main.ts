@@ -1,4 +1,6 @@
-////// string, number & boolean
+// Tipos
+
+////// 1- string, number & boolean
 
 
 console.log('Descomente os console.log')
@@ -17,7 +19,7 @@ let isOpen: boolean = false
 
 
 
-////// any, void, never
+////// 2- any, void, never
 
 
 let stock: any = 89
@@ -39,7 +41,7 @@ function error(): never {
 
 
 
-///// array, tuple, enum
+///// 3- array, tuple, enum
 
 
 let items: number[]
@@ -62,7 +64,7 @@ let white: Colors = Colors.white
 
 
 
-///// type union
+///// 4- type union
 
 
 function showPet(pet: 'dog' | 'cat' | 'zebra'){
@@ -73,7 +75,7 @@ showPet('dog')
 
 
 
-///// type aliases
+///// 5- type aliases
 
 
 type Pet = 'dog' | 'cat' | 'zebra'
@@ -86,11 +88,11 @@ displayPet('cat')
 
 
 
-///// type inference
+///// 6- type inference
 
 
-let msg = 'Cataline'
+// let msg = 'Cataline'
 
-window.addEventListener('click', (event) => {
-  console.log(event.target)
-})
+// window.addEventListener('click', (event) => {
+//   console.log(event.target)
+// })
